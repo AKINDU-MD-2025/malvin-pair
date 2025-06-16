@@ -75,29 +75,26 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "malvin~" + string_session;
+                        let md = "AKINDU-MD~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hey there, AKINDU-MD User!* 👋🏻
 
-Thanks for using *AKINDU-MD* — your session has been successfully created!
+▢ Thanks for using *AKINDU-MD* — your session has been successfully created!
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
+▢ 🔐 *Session ID:* Sent above  
+▢ ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
 
 ——————
 
-*✅ Stay Updated:*  
+▢ *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
 
 
-*💻 Source Code:*  
+▢ *💻 Source Code:*  
 Fork & explore the project on GitHub:  
 
 
-——————
-
-> *© Powered by Malvin King*
- ✌🏻`; 
+> POWER BY AKINDU-MD`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
@@ -115,25 +112,24 @@ renderLargerThumbnail: true
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
                             let desc = `Hey there, AKINDU-MD User!* 👋🏻
 
-Thanks for using *AKINDU-MD* — your session has been successfully created!
+▢ Thanks for using *AKINDU-MD* — your session has been successfully created!
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
+▢ 🔐 *Session ID:* Sent above  
+▢ ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
 
 ——————
 
-*✅ Stay Updated:*  
+▢ *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
 
-*💻 Source Code:*  
+
+▢ *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/XdKing2/MALVIN-XD
+
 
 ——————
 
-> *© Powered by Malvin King*
-Stay cool and hack smart. ✌🏻`;
+> `;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
